@@ -31,9 +31,9 @@ public class HiloConexion implements Runnable {
             sumaUna = bfr.readLine();
             sumaDos = bfr.readLine();
             sumaTres = bfr.readLine();
-            int sumaRealizadaUno = Sumador.suma(sumaUna);
-            int sumaRealizadaDos = Sumador.suma(sumaDos);
-            int sumaRealizadaTres = Sumador.suma(sumaTres);
+            int sumaRealizadaUno = Sumador.sumatorio(sumaUna);
+            int sumaRealizadaDos = Sumador.sumatorio(sumaDos);
+            int sumaRealizadaTres = Sumador.sumatorio(sumaTres);
             System.out.println(Thread.currentThread().getName() + " recibio:" + lineaRecibida);
             pw.println(sumaRealizadaUno);
             pw.println(sumaRealizadaDos);
